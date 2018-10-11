@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="10dp">
+
+    <FrameLayout android:id="@+id/movieScreen_frame"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarMovieBaseFragment"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/movieRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <FrameLayout android:id="@+id/movieview_frame"
+                         xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressBarMovieFragment"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/movieview_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/movieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/movieview_frame"
+                android:textSize="30sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieName"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/movieview_frame"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieYear"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/movieview_frame"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieVoteAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieTime"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/movieview_frame"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieview_frame"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="40dp"
+                android:maxLines="10"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieTrailersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieOverview"
+                android:layout_marginStart="0dp"
+                android:maxLines="10"
+                android:text="@string/trailers_text"/>
+
+            <View
+                android:id="@+id/divisorBase"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/movieTrailersText"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <FrameLayout android:id="@+id/movieVideoListScreen_frame"
+                         xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_below="@id/divisorBase">
+
+                <ProgressBar
+                    android:id="@+id/progressBarMovieVideoList"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="visible"/>
+
+                <LinearLayout
+                    android:id="@+id/movieVideoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

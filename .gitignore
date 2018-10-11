@@ -1,0 +1,99 @@
+app/prod_Download_NoSync/
+app/prod_Download_Sync/
+app/prod/
+app/dev_Download_NoSync/
+app/dev_Download_Sync/
+app/dev/
+captures/
+tmp/
+doc/geoexplo_doc
+myProperties.gradle
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generic
+*~
+
+# Properties
+local.properties
+keystore.properties
+
+# Signing
+.signing/
+
+# backup
+*.bak
+
+# Lint
+lint
+
+# Android
+bin/
+gen/
+classes/
+*.class
+gen-external-apklibs/
+*.dex
+*.apk
+*.ap_
+
+# Android NDK
+*.o
+*.o.d
+*_g
+*.a
+*.so
+*.pinfo
+*.gcno
+*.bar
+gdbserver
+gdb.setup
+
+# Maven
+target
+.recommenders
+
+# Gradle
+.gradle
+gradlew
+gradlew.bat
+build/
+
+# Eclipse
+.classpath
+.project
+.cproject
+.metadata
+.settings
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Android Studio
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+
+# Vim swap files
+*.swp
+
+# Crashlytics
+com_crashlytics_export_strings.xml
+
+# Sandbox stuff
+_sandbox
+
+.private
+
+
